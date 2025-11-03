@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/mediaquery.css">
 </head>
@@ -16,21 +17,27 @@
             <div id="form">
                  <h1>login</h1>
                  <p>seja bem-vindo(a) novamente, faça login para acessar sua conta e porder fazer as configuraçoes no seu ambiente.</p>
-                 <form action="login.php" method="post">
+                 <form action="login.php" method="post" autocomplete="on">
                         <div id="campo">
-                            <label for="iemail">email:</label>
-                            <input type="email" name="email" id="iemail" required minlength="0" maxlength="30" placeholder="Seu e-mail">
+                            <i class="material-icons">person</i>
+                            <input type="email" name="email" id="iemail" required  maxlength="30" placeholder="Seu e-mail" autocomplete="email">
+
+                            <label for="iemail">Login:</label>
                         </div>
 
 
-                        <div id="senha">
-                            <label for="isenha">senha:</label>
-                            <input type="password" name="senha" id="isenha" minlength="8" maxlength="10" required placeholder="Senha">
+                        <div id="senha"> 
+                            <i class="material-icons">vpn_key</i>                         
+                            <input type="password" name="senha" id="isenha" minlength="8" maxlength="20" required placeholder="Senha" autocomplete="current-password">
+
+                            <label for="isenha">Senha:</label>
                         </div>
 
 
-                         <input type="submit" value="enviar">
-                        <input type="reset" value="deletar">
+                         <input type="submit" value="entrar">
+                        <a href="esqueci.html">
+                            Esqueci a senha <i class="material-icons">mail</i>
+                        </a>
                  </form>
             </div>
         </section>
